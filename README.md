@@ -1,5 +1,5 @@
 # community_store_export_data
 Adds export capabilities to the Concrete5 Community Store  
-Easely export products and orders.
+Export products and orders in the Store dashboard.
 
 Install Community store first
