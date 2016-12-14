@@ -34,6 +34,9 @@ class Sales extends DashboardPageController{
     if($postValues['orderStatus'] != 'all'){
       $orderList->setStatus($postValues['orderStatus']);
     }
+    if(isset($postValues['paymentStatus'])){
+      $orderList->setPaid(1);
+    }
 
     $paginator = $orderList->getPagination();
     $pagination = $paginator->renderDefaultView();
