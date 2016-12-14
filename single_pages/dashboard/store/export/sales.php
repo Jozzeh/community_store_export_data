@@ -33,6 +33,14 @@ if(!isset($dateFrom)){
 			</div>
 		</div>
 		<div class="ccm-search-fields-row">
+			<div class="form-group form-group-full">
+				<?= $form->label('paymentStatus', t('Only paid orders'))?>
+				<div class="ccm-search-field-content ccm-search-field-content-select2">
+					<?= Core::make('helper/form')->checkbox('paymentStatus', $_POST['paymentStatus']); ?>
+				</div>
+			</div>
+		</div>
+		<div class="ccm-search-fields-row">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-6">
