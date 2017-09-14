@@ -37,7 +37,7 @@ class Products extends DashboardPageController{
     $products->setShowOutOfStock(true);
     $paginator = $products->getPagination();
     $pagination = $paginator->renderDefaultView();
-    $products = $paginator->getCurrentPageResults();
+    $products = $paginator->getResults();
 
     $productsArray = $this->generateProducts($products);
 
