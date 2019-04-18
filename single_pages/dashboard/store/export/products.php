@@ -3,7 +3,6 @@ defined('C5_EXECUTE') or die("Access Denied.");
 $form = Core::make('helper/form');
 ?>
 
-<div class="ccm-dashboard-content-full">
 	<div class="ccm-search-fields-row"> </div>
 	<div class="ccm-search-fields-row">
 		<div class="container-fluid">
@@ -25,6 +24,7 @@ $form = Core::make('helper/form');
 			</div>
 		</div>
 	</div>
+<div class="ccm-dashboard-content-full">
 	<table class="ccm-search-results-table">
 		<thead>
 			<tr>
