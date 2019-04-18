@@ -32,7 +32,7 @@ class Sales extends DashboardPageController{
     $orderList->setFromDate($postValues['dateFrom']);
     $dateTo = $postValues['dateTo'];
     if(empty($dateTo)){
-      $dateTo = date(Y-m-d);
+      $dateTo = date('Y-m-d');
     }
     $orderList->setToDate($dateTo);
     if($postValues['orderStatus'] != 'all'){
