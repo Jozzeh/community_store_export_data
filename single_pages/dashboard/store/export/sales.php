@@ -6,7 +6,7 @@ if(!isset($dateFrom)){
 }
 ?>
 
-<div class="ccm-dashboard-content-full">
+
 	<form action="<?=$this->action('exportSales')?>" method="post" class="form form-inline ccm-search-fields">
 		<div class="ccm-search-fields-row">
 			<div class="form-group form-group-full">
@@ -59,6 +59,7 @@ if(!isset($dateFrom)){
 			</div>
 		</div>
 	</form>
+<div class="ccm-dashboard-content-full">
 	<table class="ccm-search-results-table">
 		<thead>
 			<tr>
